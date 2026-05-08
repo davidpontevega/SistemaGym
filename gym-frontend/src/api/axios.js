@@ -1,7 +1,9 @@
 import axios from 'axios'
 
+const BASE_URL = 'https://sistemagym-48kj.onrender.com/api'
+
 const api = axios.create({
-  baseURL: 'http://127.0.0.1:8000/api',
+  baseURL: BASE_URL,
 })
 
 api.interceptors.request.use((config) => {
@@ -30,7 +32,7 @@ api.interceptors.response.use(
       }
 
       try {
-        const res = await axios.post('http://127.0.0.1:8000/api/auth/refresh/', {
+        const res = await axios.post(`${BASE_URL}/auth/refresh/`, {
           refresh: refreshToken,
         })
 
