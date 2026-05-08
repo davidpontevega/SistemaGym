@@ -114,12 +114,16 @@ SPECTACULAR_SETTINGS = {
     'LICENSE': {
         'name': 'MIT License'
     },
-    'SERVERS': [
-        {
-            'url': 'http://127.0.0.1:8000',
-            'description': 'Servidor local'
-        },
-    ],
+'SERVERS': [
+    {
+        'url': 'https://sistemagym-48kj.onrender.com',
+        'description': 'Servidor de producción'
+    },
+    {
+        'url': 'http://127.0.0.1:8000',
+        'description': 'Servidor local'
+    },
+],
     'TAGS': [
         {'name': 'Usuarios', 'description': 'Endpoints para usuarios y roles'},
         {'name': 'Clases', 'description': 'Endpoints para clases e instructores'},
