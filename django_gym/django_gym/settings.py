@@ -4,7 +4,6 @@ import os
 
 load_dotenv()
 DATABASE_URL_CHECK = os.getenv('DATABASE_URL')
-print(f"=== DATABASE_URL existe: {bool(DATABASE_URL_CHECK)} ===")
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
